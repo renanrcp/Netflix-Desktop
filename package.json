@@ -1,7 +1,7 @@
 {
     "name": "netflix-desktop",
     "version": "1.0.0",
-    "main": "main.js",
+    "main": "src/main.js",
     "description": "Netflix desktop version",
     "repository": "https://github.com/renanrcp/Netflix-Desktop",
     "author": "renanrcp",
@@ -12,5 +12,6 @@
     },
     "devDependencies": {
         "electron": "^8.0.0"
-    }
+    },
+    "productName": "Netflix"
 }
