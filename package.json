@@ -1,0 +1,13 @@
+{
+    "name": "netflix-desktop",
+    "version": "1.0.0",
+    "main": "main.js",
+    "description": "Netflix desktop version",
+    "repository": "https://github.com/renanrcp/Netflix-Desktop",
+    "author": "renanrcp",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "start": "electron ."
+    }
+}
