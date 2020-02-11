@@ -1,4 +1,4 @@
-const { app,  BrowserWindow } = require('electron');
+const { app,  BrowserWindow, Menu } = require('electron');
 const nativeImage = require('electron').nativeImage;
 
 const createWindow = () => {
@@ -16,6 +16,45 @@ const createWindow = () => {
     window.on('page-title-updated', (e) => {
         e.preventDefault();
     });
+
+    const menu = Menu.buildFromTemplate([
+        {
+            label: 'Preferences',
+            submenu: [
+                {
+                    label: 'Language',
+                    click: () => {
+
+                    }
+                },
+                {
+                    label: 'Enable/Disable Discord RPC',
+                    click: () => {
+
+                    }
+                }
+            ]
+        },
+        {
+            label: 'Help',
+            submenu: [
+                {
+                    label: 'Reload',
+                    click: () => {
+
+                    }
+                },
+                {
+                    label: 'Repository',
+                    click: () => {
+                        
+                    }   
+                }
+            ]
+        }
+    ])
+
+    window.setMenu(menu);
 
     window.loadURL('https://www.netflix.com/');
 };
